@@ -12,7 +12,8 @@ Below is the list of problems we are working on, with links to corresponding Mar
    - Formats a list of words into fully justified text, distributing spaces evenly and left-justifying the last line.
 3. [Rotating the Box](rotate_box.md)  
    - Simulates gravity on falling stones before rotating the box 90 degrees clockwise.
-4. [Spiral Matrix](spiral_matrix.md) **[TODO]**  
+4. [Spiral Matrix](spiral_matrix.md)  
+   - Extracts elements from a matrix in a spiral order by iteratively shrinking the boundaries.
 5. [Meeting Scheduler](meeting_scheduler.md) **[TODO]**  
 6. [Two Sum Less Than K](two_sum_less_than_k.md) **[TODO]**  
 7. [Candy Crush](candy_crush.md) **[TODO]**  
