@@ -20,7 +20,8 @@ Below is the list of problems we are working on, with links to corresponding Mar
    - Finds the maximum sum of two numbers that is less than `k` using a sorted two-pointer approach.
 7. [Candy Crush](candy_crush.md)  
    - Implements a simulation of Candy Crush, repeatedly crushing adjacent candies and applying gravity until the board stabilizes.
-8. [Binary Tree Paths](binary_tree_paths.md) **[TODO]**  
+8. [Binary Tree Paths](binary_tree_paths.md)  
+   - Finds all root-to-leaf paths in a binary tree using Depth-First Search (DFS).
 9. [Longest Substring Without Repeating Characters](longest_substring_no_repeats.md)  
    - A sliding window approach to find the longest substring with unique characters efficiently.  
 10. [Simple Bank System](simple_bank_system.md) **[TODO]**  
