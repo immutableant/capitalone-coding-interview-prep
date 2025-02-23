@@ -16,7 +16,8 @@ Below is the list of problems we are working on, with links to corresponding Mar
    - Extracts elements from a matrix in a spiral order by iteratively shrinking the boundaries.
 5. [Meeting Scheduler](meeting_scheduler.md)  
    - Finds the earliest available time slot for a meeting using a two-pointer or heap-based approach.
-6. [Two Sum Less Than K](two_sum_less_than_k.md) **[TODO]**  
+6. [Two Sum Less Than K](two_sum_less_than_k.md)  
+   - Finds the maximum sum of two numbers that is less than `k` using a sorted two-pointer approach.
 7. [Candy Crush](candy_crush.md) **[TODO]**  
 8. [Binary Tree Paths](binary_tree_paths.md) **[TODO]**  
 9. [Longest Substring Without Repeating Characters](longest_substring_no_repeats.md)  
