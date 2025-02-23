@@ -8,7 +8,8 @@ Below is the list of problems we are working on, with links to corresponding Mar
 
 1. [Count Primes](count_primes.md)  
    - Counts the number of prime numbers less than `n` using the Sieve of Eratosthenes for optimal efficiency.
-2. [Text Justification](text_justification.md) **[TODO]**  
+2. [Text Justification](text_justification.md)  
+   - Formats a list of words into fully justified text, distributing spaces evenly and left-justifying the last line.
 3. [Rotating the Box](rotating_the_box.md) **[TODO]**  
 4. [Spiral Matrix](spiral_matrix.md) **[TODO]**  
 5. [Meeting Scheduler](meeting_scheduler.md) **[TODO]**  
