@@ -14,7 +14,8 @@ Below is the list of problems we are working on, with links to corresponding Mar
    - Simulates gravity on falling stones before rotating the box 90 degrees clockwise.
 4. [Spiral Matrix](spiral_matrix.md)  
    - Extracts elements from a matrix in a spiral order by iteratively shrinking the boundaries.
-5. [Meeting Scheduler](meeting_scheduler.md) **[TODO]**  
+5. [Meeting Scheduler](meeting_scheduler.md)  
+   - Finds the earliest available time slot for a meeting using a two-pointer or heap-based approach.
 6. [Two Sum Less Than K](two_sum_less_than_k.md) **[TODO]**  
 7. [Candy Crush](candy_crush.md) **[TODO]**  
 8. [Binary Tree Paths](binary_tree_paths.md) **[TODO]**  
