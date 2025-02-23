@@ -6,7 +6,8 @@ This repository contains solutions and reference materials for various coding in
 
 Below is the list of problems we are working on, with links to corresponding Markdown files. Those marked with **[TODO]** still need documentation.
 
-1. [Count Primes](count_primes.md) **[TODO]**  
+1. [Count Primes](count_primes.md)  
+   - Counts the number of prime numbers less than `n` using the Sieve of Eratosthenes for optimal efficiency.
 2. [Text Justification](text_justification.md) **[TODO]**  
 3. [Rotating the Box](rotating_the_box.md) **[TODO]**  
 4. [Spiral Matrix](spiral_matrix.md) **[TODO]**  
