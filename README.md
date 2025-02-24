@@ -35,7 +35,8 @@ Below is the list of problems we are working on, with links to corresponding Mar
     - Uses a greedy approach to repeatedly subtract the smaller number from the larger one until reaching zero. Optimized with integer division for efficiency, similar to the Euclidean algorithm for GCD.
 13. [Longest Continuous Subarray With Absolute Diff ≤ Limit](longest_continuous_subarray.md)  
     Uses a **sliding window** approach with **monotonic deques** to efficiently track the min and max values in a subarray. Runs in **O(N) time**, ensuring optimal performance for large inputs.
-14. [Simplify Path](simplify_path.md) **[TODO]**  
+14. [Simplify Path](simplify_unix_path.md)  
+    Uses a **stack-based approach** to simplify Unix-style file paths, efficiently handling `"."`, `".."`, and multiple slashes. Runs in **O(N) time**, ensuring optimal path normalization.
 15. [Best Time to Buy and Sell Stock](best_time_buy_sell_stock.md) **[TODO]**  
 16. [Minimum Operations to Write the Letter Y on a Grid](min_operations_write_y.md) **[TODO]**  
 17. [Palindrome Number](palindrome_number.md) **[TODO]**  
