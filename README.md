@@ -29,7 +29,8 @@ Below is the list of problems we are working on, with links to corresponding Mar
         - **List-based approach**: Accounts inferred by index.
         - **Dynamic transaction processor**: Processes transactions from input lists.
         - **HashMap-based approach**: Stores accounts with explicit account IDs for flexibility.
-11. [Block Placement Queries](block_placement_queries.md) **[TODO]**  
+11. [Block Placement Queries](block_placement_queries.md)  
+    - Efficiently handles obstacle placements and block placement queries on an infinite number line using a **SortedList** and **gap tracking**. Queries are processed in reverse order to maintain increasing gaps dynamically.
 12. [Count Operations to Obtain Zero](count_operations_to_zero.md) **[TODO]**  
 13. [Longest Continuous Subarray With Absolute Diff ≤ Limit](longest_subarray_absolute_diff.md) **[TODO]**  
 14. [Simplify Path](simplify_path.md) **[TODO]**  
