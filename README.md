@@ -31,7 +31,8 @@ Below is the list of problems we are working on, with links to corresponding Mar
         - **HashMap-based approach**: Stores accounts with explicit account IDs for flexibility.
 11. [Block Placement Queries](block_placement_queries.md)  
     - Efficiently handles obstacle placements and block placement queries on an infinite number line using a **SortedList** and **gap tracking**. Queries are processed in reverse order to maintain increasing gaps dynamically.
-12. [Count Operations to Obtain Zero](count_operations_to_zero.md) **[TODO]**  
+12. [Count Operations to Obtain Zero](count_operations_to_zero.md)  
+    - Uses a greedy approach to repeatedly subtract the smaller number from the larger one until reaching zero. Optimized with integer division for efficiency, similar to the Euclidean algorithm for GCD.
 13. [Longest Continuous Subarray With Absolute Diff ≤ Limit](longest_subarray_absolute_diff.md) **[TODO]**  
 14. [Simplify Path](simplify_path.md) **[TODO]**  
 15. [Best Time to Buy and Sell Stock](best_time_buy_sell_stock.md) **[TODO]**  
