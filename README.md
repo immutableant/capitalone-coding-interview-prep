@@ -24,7 +24,11 @@ Below is the list of problems we are working on, with links to corresponding Mar
    - Finds all root-to-leaf paths in a binary tree using Depth-First Search (DFS).
 9. [Longest Substring Without Repeating Characters](longest_substring_no_repeats.md)  
    - A sliding window approach to find the longest substring with unique characters efficiently.  
-10. [Simple Bank System](simple_bank_system.md) **[TODO]**  
+10. [Simple Bank System](simple_bank_system.md)  
+   - Implements a banking system with transfer, deposit, and withdrawal operations using three different approaches:
+        - **List-based approach**: Accounts inferred by index.
+        - **Dynamic transaction processor**: Processes transactions from input lists.
+        - **HashMap-based approach**: Stores accounts with explicit account IDs for flexibility.
 11. [Block Placement Queries](block_placement_queries.md) **[TODO]**  
 12. [Count Operations to Obtain Zero](count_operations_to_zero.md) **[TODO]**  
 13. [Longest Continuous Subarray With Absolute Diff ≤ Limit](longest_subarray_absolute_diff.md) **[TODO]**  
@@ -46,6 +50,23 @@ Below is the list of problems we are working on, with links to corresponding Mar
 
 ---
 
+## Making Your Interview Code "Production-Ready"
+
+Whether you’re coding a banking system, an inventory tracker, or any other service in an interview, you can demonstrate a “production mindset” by incorporating the following practices. These suggestions are purposely generic, so you can adapt them to nearly any coding question.
+
+### Key Topics
+- **Validation & Error Handling**
+- **Thread-Safety & Concurrency**
+- **Logging & Monitoring**
+- **Testing**
+- **Documentation & Clean Code**
+- **Configuration / Environment**
+- **Extensibility & Maintainability**
+
+Refer to the [Production-Ready Code Guide](production_ready_code.md) for a deeper dive into best practices for writing interview code that closely mimics real-world software development.
+
+---
+
 ### **Usage**
 Each problem’s Markdown file includes:
 - **Problem Description**: Explanation of the problem, constraints, and expected output.
@@ -60,3 +81,4 @@ Feel free to fork this repository, add your own solutions, or suggest improvemen
 
 ### **License**
 This repository is available under the MIT License. See `LICENSE` for details.
+
