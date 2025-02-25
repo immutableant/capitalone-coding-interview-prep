@@ -47,7 +47,8 @@ Below is the list of problems we are working on, with links to corresponding Mar
     - Uses **grid traversal and frequency counting** to determine the minimum transformations needed to form the letter Y. Runs in **O(n²) time** with an **efficient counting-based approach**.  
 19. [Palindrome Number](palindrome_number.md)  
     - Checks whether an integer is a palindrome **without converting it to a string**. Uses an **O(log N) time** and **O(1) space** approach by reversing half of the number for comparison.
-20. [Rotate Image](rotate_image.md) **[TODO]**  
+20. [Rotate Image](rotate_image.md)  
+    - Rotates an `n x n` matrix **90 degrees clockwise in-place** using **matrix transposition and row reversal**. Runs in **O(N²) time** with **O(1) space complexity**.
 21. [Find the Length of the Longest Common Prefix](longest_common_prefix.md) **[TODO]**  
 22. [Add Strings](add_strings.md) **[TODO]**  
 23. [Remove Boxes](remove_boxes.md) **[TODO]**  
