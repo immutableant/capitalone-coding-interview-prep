@@ -49,7 +49,8 @@ Below is the list of problems we are working on, with links to corresponding Mar
     - Checks whether an integer is a palindrome **without converting it to a string**. Uses an **O(log N) time** and **O(1) space** approach by reversing half of the number for comparison.
 20. [Rotate Image](rotate_image.md)  
     - Rotates an `n x n` matrix **90 degrees clockwise in-place** using **matrix transposition and row reversal**. Runs in **O(N²) time** with **O(1) space complexity**.
-21. [Find the Length of the Longest Common Prefix](longest_common_prefix.md) **[TODO]**  
+21. [Find the Length of the Longest Common Prefix](longest_common_prefix_length.md)  
+    - Uses **sorting and binary search** to efficiently find the longest common prefix between numbers in two arrays. Runs in **O(N log N + M log M) time**, significantly improving over brute force approaches.
 22. [Add Strings](add_strings.md) **[TODO]**  
 23. [Remove Boxes](remove_boxes.md) **[TODO]**  
 24. [Non-overlapping Intervals](non_overlapping_intervals.md) **[TODO]**  
