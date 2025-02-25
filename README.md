@@ -42,8 +42,9 @@ Below is the list of problems we are working on, with links to corresponding Mar
 16. [Best Time to Buy and Sell Stock II](best_time_to_buy_sell_stock_ii.md)  
     - Uses a **greedy approach** to maximize profit by summing all increasing segments in stock prices. Runs in **O(N) time**, ensuring efficient handling of large inputs.
 17. [Best Time to Buy and Sell Stock III](best_time_to_buy_sell_stock_iii.md)  
-    Uses a **dynamic programming approach** to track two transactions efficiently, ensuring an **O(N) time complexity** with **O(1) space usage** for optimal profit calculation.
-18. [Minimum Operations to Write the Letter Y on a Grid](min_operations_write_y.md) **[TODO]**  
+    - Uses a **dynamic programming approach** to track two transactions efficiently, ensuring an **O(N) time complexity** with **O(1) space usage** for optimal profit calculation.
+18. [Minimum Operations to Write the Letter Y on a Grid](minimum_operations_write_y.md)  
+    - Uses **grid traversal and frequency counting** to determine the minimum transformations needed to form the letter Y. Runs in **O(n²) time** with an **efficient counting-based approach**.  
 19. [Palindrome Number](palindrome_number.md) **[TODO]**  
 20. [Rotate Image](rotate_image.md) **[TODO]**  
 21. [Find the Length of the Longest Common Prefix](longest_common_prefix.md) **[TODO]**  
