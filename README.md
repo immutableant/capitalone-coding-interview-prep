@@ -39,18 +39,20 @@ Below is the list of problems we are working on, with links to corresponding Mar
     - Uses a **stack-based approach** to simplify Unix-style file paths, efficiently handling `"."`, `".."`, and multiple slashes. Runs in **O(N) time**, ensuring optimal path normalization.
 15. [Best Time to Buy and Sell Stock](best_time_to_buy_sell_stock.md)  
     - Uses a **greedy approach** to track the minimum price and maximize profit in a **single pass (O(N))**. Optimized for large inputs with **O(1) space complexity**.
-16. [Minimum Operations to Write the Letter Y on a Grid](min_operations_write_y.md) **[TODO]**  
-17. [Palindrome Number](palindrome_number.md) **[TODO]**  
-18. [Rotate Image](rotate_image.md) **[TODO]**  
-19. [Find the Length of the Longest Common Prefix](longest_common_prefix.md) **[TODO]**  
-20. [Add Strings](add_strings.md) **[TODO]**  
-21. [Remove Boxes](remove_boxes.md) **[TODO]**  
-22. [Non-overlapping Intervals](non_overlapping_intervals.md) **[TODO]**  
-23. [Number of Islands](number_of_islands.md)  
+16. [Best Time to Buy and Sell Stock II](best_time_to_buy_sell_stock_ii.md)  
+    - Uses a **greedy approach** to maximize profit by summing all increasing segments in stock prices. Runs in **O(N) time**, ensuring efficient handling of large inputs.
+17. [Minimum Operations to Write the Letter Y on a Grid](min_operations_write_y.md) **[TODO]**  
+18. [Palindrome Number](palindrome_number.md) **[TODO]**  
+19. [Rotate Image](rotate_image.md) **[TODO]**  
+20. [Find the Length of the Longest Common Prefix](longest_common_prefix.md) **[TODO]**  
+21. [Add Strings](add_strings.md) **[TODO]**  
+22. [Remove Boxes](remove_boxes.md) **[TODO]**  
+23. [Non-overlapping Intervals](non_overlapping_intervals.md) **[TODO]**  
+24. [Number of Islands](number_of_islands.md)  
     - A solution to count the number of islands in a 2D grid using DFS and BFS approaches.  
-24. [Largest Rectangle in Histogram](largest_rectangle_histogram.md) **[TODO]**  
-25. [Design File System](design_file_system.md) **[TODO]**  
-26. [Meeting Rooms II](meeting_rooms_ii.md)  
+25. [Largest Rectangle in Histogram](largest_rectangle_histogram.md) **[TODO]**  
+26. [Design File System](design_file_system.md) **[TODO]**  
+27. [Meeting Rooms II](meeting_rooms_ii.md)  
     - A method to determine the minimum number of meeting rooms required, using a Min-Heap and sorting.  
 
 ---
