@@ -59,9 +59,10 @@ Below is the list of problems we are working on, with links to corresponding Mar
     - Uses a **greedy approach** by sorting intervals based on their end times to efficiently determine the minimum removals required. Runs in **O(N log N) time** with **O(1) space complexity**.
 25. [Number of Islands](number_of_islands.md)  
     - A solution to count the number of islands in a 2D grid using DFS and BFS approaches.  
-24. [Largest Rectangle in Histogram](largest_rectangle_histogram.md)  
-    Uses a **monotonic stack** to efficiently compute the largest rectangular area in a histogram. Runs in **O(N) time**, significantly improving over brute-force approaches.
-27. [Design File System](design_file_system.md) **[TODO]**  
+26. [Largest Rectangle in Histogram](largest_rectangle_histogram.md)  
+    - Uses a **monotonic stack** to efficiently compute the largest rectangular area in a histogram. Runs in **O(N) time**, significantly improving over brute-force approaches.
+27. [Design File System](design_file_system.md)  
+    - Implements a file system with path creation and value retrieval using **both HashMap and Trie approaches**. Optimized for **O(N) path traversal** with efficient hierarchical storage.
 28. [Meeting Rooms II](meeting_rooms_ii.md)  
     - A method to determine the minimum number of meeting rooms required, using a Min-Heap and sorting.  
 
