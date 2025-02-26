@@ -187,5 +187,3 @@ class FileSystem:
   - Forgetting to check for **parent path existence** before creating a new one.
   - Not handling cases where the **path already exists**.
   - Using an inefficient **linear scan approach** instead of a hashmap or Trie.
-
-Would you like further optimizations or explanations? 🚀
