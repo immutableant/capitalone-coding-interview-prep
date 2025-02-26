@@ -55,7 +55,8 @@ Below is the list of problems we are working on, with links to corresponding Mar
     - Simulates manual addition without using built-in integer conversion. Uses **O(N) time complexity** with **character-by-character processing** and carry management.
 23. [Remove Boxes](remove_boxes.md)  
     - Uses **dynamic programming with memoization** to maximize points by removing contiguous boxes optimally. Employs **O(N³) complexity** with a **merging strategy** to combine non-adjacent boxes for higher scores.
-24. [Non-overlapping Intervals](non_overlapping_intervals.md) **[TODO]**  
+24. [Non-overlapping Intervals](non_overlapping_intervals.md)  
+    - Uses a **greedy approach** by sorting intervals based on their end times to efficiently determine the minimum removals required. Runs in **O(N log N) time** with **O(1) space complexity**.
 25. [Number of Islands](number_of_islands.md)  
     - A solution to count the number of islands in a 2D grid using DFS and BFS approaches.  
 26. [Largest Rectangle in Histogram](largest_rectangle_histogram.md) **[TODO]**  
