@@ -52,8 +52,9 @@ Below is the list of problems we are working on, with links to corresponding Mar
 21. [Find the Length of the Longest Common Prefix](longest_common_prefix_length.md)  
     - Uses **sorting and binary search** to efficiently find the longest common prefix between numbers in two arrays. Runs in **O(N log N + M log M) time**, significantly improving over brute force approaches.
 22. [Add Strings](add_strings.md)  
-    Simulates manual addition without using built-in integer conversion. Uses **O(N) time complexity** with **character-by-character processing** and carry management.
-23. [Remove Boxes](remove_boxes.md) **[TODO]**  
+    - Simulates manual addition without using built-in integer conversion. Uses **O(N) time complexity** with **character-by-character processing** and carry management.
+23. [Remove Boxes](remove_boxes.md)  
+    - Uses **dynamic programming with memoization** to maximize points by removing contiguous boxes optimally. Employs **O(N³) complexity** with a **merging strategy** to combine non-adjacent boxes for higher scores.
 24. [Non-overlapping Intervals](non_overlapping_intervals.md) **[TODO]**  
 25. [Number of Islands](number_of_islands.md)  
     - A solution to count the number of islands in a 2D grid using DFS and BFS approaches.  
