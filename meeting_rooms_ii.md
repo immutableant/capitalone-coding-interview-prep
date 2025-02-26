@@ -1,103 +1,120 @@
-# Meeting Rooms II: Quick Reference
+# Meeting Rooms II
 
-## Problem Description
+## Problem Statement
+Given an array of **meeting time intervals** `intervals` where `intervals[i] = [starti, endi]`, return the **minimum number of conference rooms required**.
 
-Given an array of meeting time intervals `intervals` where `intervals[i] = [starti, endi]`, return the **minimum number of conference rooms** required.
+---
 
-### Example 1:
-
-```plaintext
-Input: intervals = [[0,30],[5,10],[15,20]]
-Output: 2
-Explanation:
-- Meeting 1: [0,30]
-- Meeting 2: [5,10]
-- Meeting 3: [15,20]
-
-Meetings 1 and 2 overlap, so at least two rooms are needed.
+### Example Cases
+#### Example 1
+**Input:**
+```python
+intervals = [[0,30],[5,10],[15,20]]
 ```
-
-### Example 2:
-
-```plaintext
-Input: intervals = [[7,10],[2,4]]
-Output: 1
-Explanation:
-- Meeting 1: [7,10]
-- Meeting 2: [2,4]
-
-Since these meetings do not overlap, only one room is required.
+**Output:**
+```python
+2
 ```
+**Explanation:**
+- Meeting 1: `[0,30]`
+- Meeting 2: `[5,10]`
+- Meeting 3: `[15,20]`
+- Meetings 1 and 2 overlap, so at least **two rooms** are needed.
 
-### Constraints:
+#### Example 2
+**Input:**
+```python
+intervals = [[7,10],[2,4]]
+```
+**Output:**
+```python
+1
+```
+**Explanation:**
+- Meeting 1: `[7,10]`
+- Meeting 2: `[2,4]`
+- Since these meetings **do not overlap**, only **one room** is required.
 
+### Constraints
 - `1 <= intervals.length <= 10^4`
 - `0 <= starti < endi <= 10^6`
 
 ---
 
-## Code Implementation
+## Solution Approach
+### **Min-Heap Approach (O(n log n))**
+To efficiently track the number of rooms required:
+1. **Sort the meetings by start time**.
+2. **Use a Min-Heap** to track the earliest ending meeting.
+3. **Iterate through the sorted intervals:**
+   - If the current meeting **starts after or when the earliest meeting ends**, remove that meeting from the heap.
+   - Always add the current meeting’s **end time** to the heap.
+4. The **size of the heap** at any point gives the **number of rooms needed**.
 
-### Python Solution (Using Min-Heap):
-
+### **Python Implementation (Min-Heap)**
 ```python
 from typing import List
 import heapq
 
 class Solution:
     def minMeetingRooms(self, intervals: List[List[int]]) -> int:
+        """
+        Finds the minimum number of meeting rooms required using a min-heap.
+        """
         if not intervals:
             return 0
 
-        # Sort meetings by start time
+        # Step 1: Sort meetings by start time
         intervals.sort(key=lambda x: x[0])
         
         # Min-heap to track end times of meetings
         min_heap = []
         
-        # Add the first meeting's end time
+        # Step 2: Add the first meeting’s end time to the heap
         heapq.heappush(min_heap, intervals[0][1])
         
+        # Step 3: Iterate through remaining meetings
         for meeting in intervals[1:]:
-            # If the earliest meeting has ended, free up a room
+            # If the earliest ending meeting has ended, remove it from heap
             if meeting[0] >= min_heap[0]:
                 heapq.heappop(min_heap)
             
             # Allocate a room for the current meeting
             heapq.heappush(min_heap, meeting[1])
         
-        # The heap size is the number of rooms needed
+        # The heap size represents the number of rooms needed
         return len(min_heap)
 ```
 
-### Time Complexity:
-- **O(n log n)**: Sorting the intervals takes O(n log n), and the heap operations take O(log n) for each interval.
-
-### Space Complexity:
-- **O(n)**: Space for the heap to store end times.
+### **Complexity Analysis**
+- **Time Complexity:** `O(n log n)` due to sorting and heap operations.
+- **Space Complexity:** `O(n)` for the heap storing end times.
 
 ---
 
-## Alternative Approaches
+## Alternative Approach: **Two-Pointer Method**
+Instead of using a heap, we can leverage **sorted start and end times** to track room allocation.
 
-### Two Pointers (Start and End Times)
-
-#### Code:
+### **Python Implementation (Two Pointers)**
 ```python
 class Solution:
     def minMeetingRooms(self, intervals: List[List[int]]) -> int:
+        """
+        Finds the minimum number of meeting rooms required using the two-pointer method.
+        """
         if not intervals:
             return 0
         
-        # Separate and sort start and end times
+        # Step 1: Separate and sort start and end times
         start_times = sorted([i[0] for i in intervals])
         end_times = sorted([i[1] for i in intervals])
         
         start_ptr = end_ptr = 0
         used_rooms = 0
         
+        # Step 2: Process all meetings
         while start_ptr < len(intervals):
-            # A meeting has ended, free up a room
+            # If the earliest meeting has ended, free up a room
             if start_times[start_ptr] >= end_times[end_ptr]:
                 used_rooms -= 1
                 end_ptr += 1
@@ -109,20 +126,24 @@ class Solution:
         return used_rooms
 ```
 
-#### Time Complexity:
-- **O(n log n)**: Due to sorting of start and end times.
-
-#### Space Complexity:
-- **O(n)**: For the sorted start and end arrays.
+### **Complexity Analysis**
+- **Time Complexity:** `O(n log n)` due to sorting.
+- **Space Complexity:** `O(n)` for storing sorted times.
 
 ---
 
 ## Interview Tips
+- **Key Concepts to Discuss:**
+  - **Sorting start and end times separately**.
+  - **Using a min-heap to efficiently track active meetings**.
+  - **Greedy approach to track overlapping intervals**.
 
-- Explain why sorting the start and end times helps in efficiently tracking room usage.
-- Emphasize the efficiency of using a **min-heap** to track the earliest meeting end time.
-- Discuss edge cases:
-  - Single meeting → return `1`
+- **Common Edge Cases:**
+  - Single meeting → return `1`.
   - Fully overlapping meetings → need as many rooms as meetings.
-- Compare **Min-Heap** and **Two-Pointer** approaches in terms of implementation simplicity and performance.
+  - Meetings that just touch but don’t overlap (e.g., `[1, 3]` and `[3, 5]`).
+
+- **Comparison Between Approaches:**
+  - **Min-Heap Approach:** More intuitive for tracking dynamic allocations.
+  - **Two-Pointer Approach:** Uses sorted times for efficient tracking, no heap required.
 
