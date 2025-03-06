@@ -10,7 +10,7 @@ Below is the list of problems we are working on, with links to corresponding Mar
    - Counts the number of prime numbers less than `n` using the Sieve of Eratosthenes for optimal efficiency.
 2. [Text Justification](text_justification.md)  
    - Formats a list of words into fully justified text, distributing spaces evenly and left-justifying the last line.
-3. [Rotating the Box](rotate_box.md)  
+3. [Rotating the Box](rotating_the_box.md)  
    - Simulates gravity on falling stones before rotating the box 90 degrees clockwise.
 4. [Spiral Matrix](spiral_matrix.md)  
    - Extracts elements from a matrix in a spiral order by iteratively shrinking the boundaries.
