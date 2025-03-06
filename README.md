@@ -43,7 +43,7 @@ Below is the list of problems we are working on, with links to corresponding Mar
     - Uses a **greedy approach** to maximize profit by summing all increasing segments in stock prices. Runs in **O(N) time**, ensuring efficient handling of large inputs.
 17. [Best Time to Buy and Sell Stock III](best_time_to_buy_sell_stock_iii.md)  
     - Uses a **dynamic programming approach** to track two transactions efficiently, ensuring an **O(N) time complexity** with **O(1) space usage** for optimal profit calculation.
-18. [Minimum Operations to Write the Letter Y on a Grid](minimum_operations_write_y.md)  
+18. [Minimum Operations to Write the Letter Y on a Grid](min_operations_write_y.md)  
     - Uses **grid traversal and frequency counting** to determine the minimum transformations needed to form the letter Y. Runs in **O(n²) time** with an **efficient counting-based approach**.  
 19. [Palindrome Number](palindrome_number.md)  
     - Checks whether an integer is a palindrome **without converting it to a string**. Uses an **O(log N) time** and **O(1) space** approach by reversing half of the number for comparison.
